@@ -3,25 +3,29 @@
         background:#eae6df;
       }
 
-      header {
+      .content {
         width:80%;
         max-width:60em;
         margin-left:auto;
         margin-right:auto;
+      }
 
+      header {
         margin-top:50px;
         margin-bottom:25px;
       }
 
       header h1 {
-        font-size: 1.375em; /* 24 px / 16 px */
+        font-size: 1.25em; /* 20 px / 16 px */
         text-transform:uppercase;
-
         text-align:center;
+        font-family:Helvetica;
       }
 
       header p.date {
         font-size: 2.25em; /* 36 px / 16 px */
+        color:#b20838;
+
 
         text-align:center;
 
@@ -29,53 +33,76 @@
       }
 
       section {
-        margin-left:auto;
-        margin-right:auto;
-        width:80%;
-
-        max-width:60em;
         background:#b20838;
       }
 
       section img {
-        max-width:100%;
+        max-width:98%;
+        margin:1%;
+        vertical-align:middle;
       }
 
       ul {
-        overflow:visible;
-        margin-left:auto;
-        margin-right:auto;
-        max-width:60em;
-        width:80%;
+        overflow:auto;
       }
 
       ul li {
         display:block;
         float:left;
-        width:19%;
-        margin-right:1%;
+
         margin-top:20px;
+
+        /* 5 columns */
+        width:18.33333333%;
+        margin-right:2.08333333%;
+      }
+
+      /* every fifth has no right margin */
+      ul li:nth-child(5n+5) {
+        margin-right:0;
       }
 
       ul li a {
         display:block;
         background:#eae6df;
         border:solid 5px #b20838;
-        height:75px;
-      }
-
-      ul li:last-child {
-        margin-right:0;
+        height:100px;
       }
 
       /* responsiveness */
       @media screen and (max-width: 1050px) {
+        ul li, ul li:nth-child(5n+5) {
+          /* 4 columns */
+          width:23.21428571%;
+          margin-right:2.38095238%;
+        }
+
+        /* every fourth has no right margin */
+        ul li:nth-child(4n+4) {
+          margin-right:0;
+        }
+
       }
 
       @media screen and (max-width: 980px) {
       }
 
       @media screen and (max-width: 800px) {
+        ul li, ul li:nth-child(5n+5), ul li:nth-child(4n+4) {
+          /* 3 columns */
+          width:31.25%;
+          margin-right:3.125%;
+        }
+
+        ul li:nth-child(5n+5), ul li:nth-child(4n+4) {
+          margin-right:3.125%;
+        }
+
+
+        /* every third has no right margin */
+        ul li:nth-child(3n+3) {
+          margin-right:0;
+        }
       }
 
       @media screen and (max-width: 500px) {
@@ -97,17 +124,16 @@
           font-size:0.8571428571em;
         }
 
-        ul li {
-          min-width:123px;
-          margin-right:10px;
-          margin-top:10px;
+        ul li, ul li:nth-child(5n+5), ul li:nth-child(4n+4), ul li:nth-child(3n+3) {
+          width:47.5%;
+          margin-right:5%;
         }
 
-        ul li:nth-child(even) {
+        ul li:nth-child(2n+2) {
           margin-right:0;
         }
 
-        header, section {
-          width:100%;
+        .content {
+          width:90%;
         }
       }

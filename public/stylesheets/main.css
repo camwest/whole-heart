@@ -92,21 +92,6 @@
       }
 
       @media screen and (max-width: 800px) {
-        ul li, ul li:nth-child(6n+6), ul li:nth-child(4n+4) {
-          /* 3 columns */
-          width:31.25%;
-          margin-right:3.125%;
-        }
-
-        ul li:nth-child(6n+6), ul li:nth-child(4n+4) {
-          margin-right:3.125%;
-        }
-
-
-        /* every third has no right margin */
-        ul li:nth-child(3n+3) {
-          margin-right:0;
-        }
       }
 
       @media screen and (max-width: 500px) {
@@ -126,6 +111,17 @@
 
         header h1 {
           font-size:0.8571428571em;
+        }
+
+        ul li, ul li:nth-child(6n+6), ul li:nth-child(4n+4) {
+          /* 3 columns */
+          width:31.25%;
+          margin-right:3.125%;
+        }
+
+        /* every third has no right margin */
+        ul li:nth-child(3n+3) {
+          margin-right:0;
         }
 
         /*ul li, ul li:nth-child(6n+6), ul li:nth-child(4n+4), ul li:nth-child(3n+3) {

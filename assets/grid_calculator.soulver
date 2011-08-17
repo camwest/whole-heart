@@ -338,8 +338,8 @@
 			</formatting>
 		</line>
 		<line>
-			<expression>Elements: 6</expression>
-			<answer>6</answer>
+			<expression>Elements: 4</expression>
+			<answer>4</answer>
 			<formatting>
 				<item>
 					<key>sn_mode</key>
@@ -381,7 +381,7 @@
 		</line>
 		<line>
 			<expression>Margins: (___rel_line(-1)) - 1</expression>
-			<answer>5</answer>
+			<answer>3</answer>
 			<formatting>
 				<item>
 					<key>sn_mode</key>
@@ -423,7 +423,7 @@
 		</line>
 		<line>
 			<expression>5 elements: (((___rel_line(-8)) - (___rel_line(2)))/(___rel_line(-2)))/(___rel_line(-8))</expression>
-			<answer>0.14930555555555555555555555555555555555555555555556</answer>
+			<answer>0.234375</answer>
 			<formatting>
 				<item>
 					<key>sn_mode</key>
@@ -507,7 +507,7 @@
 		</line>
 		<line>
 			<expression>Total Margins: ((___rel_line(-1)) × (___rel_line(-10))) × (___rel_line(-3))</expression>
-			<answer>99.999999999999999999999999999999999999999999999984</answer>
+			<answer>59.9999999999999999999999999999999999999999999999904</answer>
 			<formatting>
 				<item>
 					<key>sn_mode</key>
@@ -549,7 +549,7 @@
 		</line>
 		<line>
 			<expression>Total Elements: (___rel_line(-3)) × 960 × (___rel_line(-5))</expression>
-			<answer>860.0000000000000000000000000000000000000000000000256</answer>
+			<answer>900</answer>
 			<formatting>
 				<item>
 					<key>sn_mode</key>
@@ -591,7 +591,214 @@
 		</line>
 		<line>
 			<expression>(___rel_line(-2)) + (___rel_line(-1))</expression>
-			<answer>960.0000000000000000000000000000000000000000000000096</answer>
+			<answer>959.9999999999999999999999999999999999999999999999904</answer>
+			<formatting>
+				<item>
+					<key>sn_mode</key>
+					<value>2</value>
+				</item>
+				<item>
+					<key>display_format</key>
+					<value>0</value>
+				</item>
+				<item>
+					<key>sn_style</key>
+					<value>1</value>
+				</item>
+				<item>
+					<key>decimal_places</key>
+					<value>10</value>
+				</item>
+				<item>
+					<key>thousands_separator</key>
+					<value>1</value>
+				</item>
+				<item>
+					<key>trailing_zeros</key>
+					<value>0</value>
+				</item>
+				<item>
+					<key>display_base</key>
+					<value>10</value>
+				</item>
+				<item>
+					<key>sn_exp_granularity</key>
+					<value>1</value>
+				</item>
+				<item>
+					<key>expr_text_align</key>
+					<value>0</value>
+				</item>
+			</formatting>
+		</line>
+		<line>
+			<expression></expression>
+			<formatting>
+				<item>
+					<key>sn_mode</key>
+					<value>2</value>
+				</item>
+				<item>
+					<key>display_format</key>
+					<value>0</value>
+				</item>
+				<item>
+					<key>sn_style</key>
+					<value>1</value>
+				</item>
+				<item>
+					<key>decimal_places</key>
+					<value>10</value>
+				</item>
+				<item>
+					<key>thousands_separator</key>
+					<value>1</value>
+				</item>
+				<item>
+					<key>trailing_zeros</key>
+					<value>0</value>
+				</item>
+				<item>
+					<key>display_base</key>
+					<value>10</value>
+				</item>
+				<item>
+					<key>sn_exp_granularity</key>
+					<value>1</value>
+				</item>
+				<item>
+					<key>expr_text_align</key>
+					<value>0</value>
+				</item>
+			</formatting>
+		</line>
+		<line>
+			<expression>Article Width: ((___rel_line(-14)) - ((___rel_line(-6)) × (___rel_line(-14)) + (___rel_line(-5)) × (___rel_line(-14))))/(___rel_line(-14))</expression>
+			<answer>0.74479166666666666666666666666666666666666666666667</answer>
+			<formatting>
+				<item>
+					<key>sn_mode</key>
+					<value>2</value>
+				</item>
+				<item>
+					<key>display_format</key>
+					<value>0</value>
+				</item>
+				<item>
+					<key>sn_style</key>
+					<value>1</value>
+				</item>
+				<item>
+					<key>decimal_places</key>
+					<value>10</value>
+				</item>
+				<item>
+					<key>thousands_separator</key>
+					<value>1</value>
+				</item>
+				<item>
+					<key>trailing_zeros</key>
+					<value>0</value>
+				</item>
+				<item>
+					<key>display_base</key>
+					<value>10</value>
+				</item>
+				<item>
+					<key>sn_exp_granularity</key>
+					<value>1</value>
+				</item>
+				<item>
+					<key>expr_text_align</key>
+					<value>0</value>
+				</item>
+			</formatting>
+		</line>
+		<line>
+			<expression></expression>
+			<formatting>
+				<item>
+					<key>sn_mode</key>
+					<value>2</value>
+				</item>
+				<item>
+					<key>display_format</key>
+					<value>0</value>
+				</item>
+				<item>
+					<key>sn_style</key>
+					<value>1</value>
+				</item>
+				<item>
+					<key>decimal_places</key>
+					<value>10</value>
+				</item>
+				<item>
+					<key>thousands_separator</key>
+					<value>1</value>
+				</item>
+				<item>
+					<key>trailing_zeros</key>
+					<value>0</value>
+				</item>
+				<item>
+					<key>display_base</key>
+					<value>10</value>
+				</item>
+				<item>
+					<key>sn_exp_granularity</key>
+					<value>1</value>
+				</item>
+				<item>
+					<key>expr_text_align</key>
+					<value>0</value>
+				</item>
+			</formatting>
+		</line>
+		<line>
+			<expression>Detail Nav Margin: (___rel_line(-8)) + (___rel_line(-7))</expression>
+			<answer>0.25520833333333333333333333333333333333333333333333</answer>
+			<formatting>
+				<item>
+					<key>sn_mode</key>
+					<value>2</value>
+				</item>
+				<item>
+					<key>display_format</key>
+					<value>0</value>
+				</item>
+				<item>
+					<key>sn_style</key>
+					<value>1</value>
+				</item>
+				<item>
+					<key>decimal_places</key>
+					<value>10</value>
+				</item>
+				<item>
+					<key>thousands_separator</key>
+					<value>1</value>
+				</item>
+				<item>
+					<key>trailing_zeros</key>
+					<value>0</value>
+				</item>
+				<item>
+					<key>display_base</key>
+					<value>10</value>
+				</item>
+				<item>
+					<key>sn_exp_granularity</key>
+					<value>1</value>
+				</item>
+				<item>
+					<key>expr_text_align</key>
+					<value>0</value>
+				</item>
+			</formatting>
+		</line>
+		<line>
+			<expression></expression>
 			<formatting>
 				<item>
 					<key>sn_mode</key>

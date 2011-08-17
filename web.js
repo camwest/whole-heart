@@ -1,7 +1,11 @@
 var express = require('express');
 var app = express.createServer(express.logger());
 
-app.get('/', function(req, res) {
+app.get('/details', function(req, res) {
+  res.render('details.ejs');
+});
+
+app.get('/', function(req,res) {
   res.render('index.ejs');
 });
 

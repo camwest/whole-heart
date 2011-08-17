@@ -32,22 +32,23 @@
         margin-bottom:15px;
       }
 
-      section {
+      section, .details article {
         background:#b20838;
       }
 
-      section img {
+      section img, .details article img {
         max-width:98%;
         margin:1%;
         vertical-align:middle;
       }
 
       ul {
-        overflow:auto;
+        clear:both;
+        overflow:hidden;
         margin-bottom:50px;
       }
 
-      ul li {
+      ul li, .details nav {
         display:block;
         float:left;
 
@@ -63,7 +64,7 @@
         margin-right:0;
       }
 
-      ul li a {
+      ul li a, .details nav p {
         display:block;
         background:#eae6df;
         border:solid 5px #b20838;
@@ -79,15 +80,23 @@
       }
 
       @media screen and (max-width: 980px) {
-        ul li, ul li:nth-child(6n+6) {
+        ul li, ul li:nth-child(6n+6), .details nav {
           /* 4 columns */
-          width:23.21428571%;
-          margin-right:2.38095238%;
+          width:23.4375%;
+          margin-right:2.08333333%;
         }
 
         /* every fourth has no right margin */
         ul li:nth-child(4n+4) {
           margin-right:0;
+        }
+
+        .content section.details article {
+          width:74.47916667%;
+        }
+
+        .content ul.minimized {
+          margin-left:25.52083333%;
         }
       }
 
@@ -115,26 +124,49 @@
 
         ul li, ul li:nth-child(6n+6), ul li:nth-child(4n+4) {
           /* 3 columns */
-          width:31.25%;
-          margin-right:3.125%;
+          width:31.94444444%;
+          margin-right:2.08333333%;
         }
+
 
         /* every third has no right margin */
         ul li:nth-child(3n+3) {
           margin-right:0;
         }
 
-        /*ul li, ul li:nth-child(6n+6), ul li:nth-child(4n+4), ul li:nth-child(3n+3) {
-          width:47.5%;
-          margin-right:5%;
+        /* don't display the header title on mobile */
+        .details nav {
+          display:none;
         }
 
-        ul li:nth-child(2n+2) {
-          margin-right:0;
+        .content section.details article {
+          width:100%;
         }
-        */
+
+        .content ul.minimized {
+          margin-left:0;
+        }
 
         .content {
           width:90%;
         }
       }
+
+/* content details */
+
+section.details {
+  background:none;
+  overflow:hidden;
+}
+
+section.details article {
+  float:left;
+  margin-top:20px;
+
+  width:82.98611111%;
+  margin-right:0;
+}
+
+ul.minimized {
+  margin-left:17.01388889%;
+}

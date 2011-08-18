@@ -756,7 +756,90 @@
 			</formatting>
 		</line>
 		<line>
-			<expression>Detail Nav Margin: (___rel_line(-8)) + (___rel_line(-7))</expression>
+			<expression>Detail Nav Margin: ((___rel_line(-8)) + (___rel_line(-7))) × 3</expression>
+			<answer>0.76562499999999999999999999999999999999999999999999</answer>
+			<formatting>
+				<item>
+					<key>sn_mode</key>
+					<value>2</value>
+				</item>
+				<item>
+					<key>display_format</key>
+					<value>0</value>
+				</item>
+				<item>
+					<key>sn_style</key>
+					<value>1</value>
+				</item>
+				<item>
+					<key>decimal_places</key>
+					<value>10</value>
+				</item>
+				<item>
+					<key>thousands_separator</key>
+					<value>1</value>
+				</item>
+				<item>
+					<key>trailing_zeros</key>
+					<value>0</value>
+				</item>
+				<item>
+					<key>display_base</key>
+					<value>10</value>
+				</item>
+				<item>
+					<key>sn_exp_granularity</key>
+					<value>1</value>
+				</item>
+				<item>
+					<key>expr_text_align</key>
+					<value>0</value>
+				</item>
+			</formatting>
+		</line>
+		<line>
+			<expression></expression>
+			<formatting>
+				<item>
+					<key>sn_mode</key>
+					<value>2</value>
+				</item>
+				<item>
+					<key>display_format</key>
+					<value>0</value>
+				</item>
+				<item>
+					<key>sn_style</key>
+					<value>1</value>
+				</item>
+				<item>
+					<key>decimal_places</key>
+					<value>10</value>
+				</item>
+				<item>
+					<key>thousands_separator</key>
+					<value>1</value>
+				</item>
+				<item>
+					<key>trailing_zeros</key>
+					<value>0</value>
+				</item>
+				<item>
+					<key>display_base</key>
+					<value>10</value>
+				</item>
+				<item>
+					<key>sn_exp_granularity</key>
+					<value>1</value>
+				</item>
+				<item>
+					<key>expr_text_align</key>
+					<value>0</value>
+				</item>
+			</formatting>
+		</line>
+		<line>
+			<expression>Map: (___rel_line(-10)) + (___rel_line(-9))</expression>
 			<answer>0.25520833333333333333333333333333333333333333333333</answer>
 			<formatting>
 				<item>

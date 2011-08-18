@@ -136,7 +136,20 @@
 
         /* don't display the header title on mobile */
         .details nav {
+          float:none;
+          width:100%;
+        }
+
+        .details nav p {
+          border:none;
+        }
+
+        .details nav p img {
           display:none;
+        }
+
+        .content .details nav p span {
+          display:block;
         }
 
         .content section.details article {
@@ -169,4 +182,20 @@ section.details article {
 
 ul.minimized {
   margin-left:17.01388889%;
+}
+
+.map {
+  max-width:100%;
+}
+
+.map iframe {
+  width:98%;
+  height:18.75em; /* 300 px / 16 px */
+  margin:1%;
+}
+
+.details nav p span {
+  display:none;
+  font-size:1.5em; /* 24 px / 16 px */
+  font-family:Helvetica;
 }

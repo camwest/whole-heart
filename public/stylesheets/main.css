@@ -32,7 +32,7 @@
         margin-bottom:15px;
       }
 
-      section, .details article {
+      section, .details article .lead-image {
         background:#b20838;
       }
 
@@ -198,4 +198,42 @@ ul.minimized {
   display:none;
   font-size:1.5em; /* 24 px / 16 px */
   font-family:Helvetica;
+}
+
+.lead-image {
+  margin-bottom:1.5em;
+}
+
+article h1 {
+  font-weight:bold;
+  font-size:1.5em; /* 24 px / 16 px */
+  margin-bottom:1em;
+}
+
+article h2 {
+  font-weight:bold;
+  font-size: 1.25em; /* 20 px / 16 px */
+  margin-bottom:1.2em;
+}
+
+article p {
+  line-height:1.5em;
+  margin-bottom:1.5em;
+}
+
+article ul {
+  margin-bottom:1.5em;
+}
+
+article ul li {
+  float:none;
+  list-style-type: disc;
+  line-height:1.5em;
+  width:auto;
+  margin:auto;
+}
+
+article ul li:before {
+  content: ">";
+  margin-right:0.5em;
 }

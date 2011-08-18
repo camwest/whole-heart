@@ -204,6 +204,10 @@ ul.minimized {
   margin-bottom:1.5em;
 }
 
+article {
+  font-family:Helvetica;
+}
+
 article h1 {
   font-weight:bold;
   font-size:1.5em; /* 24 px / 16 px */

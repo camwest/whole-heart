@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express.createServer(express.logger());
 
+
 app.get('/details', function(req, res) {
   res.render('details.ejs');
 });
@@ -17,5 +18,6 @@ app.listen(port, function() {
 
 
 app.configure('development', function() {
+  app.use(express.compiler({ src: __dirname + '/public', enable: ['less']}));
   app.use(express.static(__dirname + '/public'));
 });

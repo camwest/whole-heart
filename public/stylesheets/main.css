@@ -1,243 +1,205 @@
-      body {
-        font-size:100%;
-        background:#eae6df;
-      }
+body {
+  font-size: 100%;
+  background: #eae6df;
+}
+.content {
+  width: 80%;
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+header h1 {
+  font-size: 1.25em;
+  /* 20 px / 16 px */
 
-      .content {
-        width:80%;
-        max-width:60em;
-        margin-left:auto;
-        margin-right:auto;
-      }
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Helvetica;
+}
+header p.date {
+  font-size: 2.25em;
+  /* 36 px / 16 px */
 
-      header {
-        margin-top:50px;
-        margin-bottom:25px;
-      }
-
-      header h1 {
-        font-size: 1.25em; /* 20 px / 16 px */
-        text-transform:uppercase;
-        text-align:center;
-        font-family:Helvetica;
-      }
-
-      header p.date {
-        font-size: 2.25em; /* 36 px / 16 px */
-        color:#b20838;
-
-
-        text-align:center;
-
-        margin-bottom:15px;
-      }
-
-      section, .details article .lead-image {
-        background:#b20838;
-      }
-
-      section img, .details article img {
-        max-width:98%;
-        margin:1%;
-        vertical-align:middle;
-      }
-
-      ul {
-        clear:both;
-        overflow:hidden;
-        margin-bottom:50px;
-      }
-
-      ul li, .details nav {
-        display:block;
-        float:left;
-
-        margin-top:20px;
-
-        /* 6 columns */
-        width:14.93055556%;
-        margin-right:2.08333333%;
-      }
-
-      /* every sixth has no right margin */
-      ul li:nth-child(6n+6) {
-        margin-right:0;
-      }
-
-      ul li a, .details nav p {
-        display:block;
-        background:#eae6df;
-        border:solid 5px #b20838;
-      }
-
-      ul li img {
-        max-width:100%;
-      }
-
-      /* responsiveness */
-      @media screen and (max-width: 1050px) {
-
-      }
-
-      @media screen and (max-width: 980px) {
-        ul li, ul li:nth-child(6n+6), .details nav {
-          /* 4 columns */
-          width:23.4375%;
-          margin-right:2.08333333%;
-        }
-
-        /* every fourth has no right margin */
-        ul li:nth-child(4n+4) {
-          margin-right:0;
-        }
-
-        .content section.details article {
-          width:74.47916667%;
-        }
-
-        .content ul.minimized {
-          margin-left:25.52083333%;
-        }
-      }
-
-      @media screen and (max-width: 800px) {
-      }
-
-      @media screen and (max-width: 500px) {
-        body {
-          font-size:14px;
-        }
-
-        header {
-          margin-top:25px;
-          margin-bottom:15px;
-        }
-
-        header p.date {
-          font-size:1.2857142857em;
-          margin-bottom:5px;
-        }
-
-        header h1 {
-          font-size:0.8571428571em;
-        }
-
-        ul li, ul li:nth-child(6n+6), ul li:nth-child(4n+4) {
-          /* 3 columns */
-          width:31.94444444%;
-          margin-right:2.08333333%;
-        }
-
-
-        /* every third has no right margin */
-        ul li:nth-child(3n+3) {
-          margin-right:0;
-        }
-
-        /* don't display the header title on mobile */
-        .details nav {
-          float:none;
-          width:100%;
-        }
-
-        .details nav p {
-          border:none;
-        }
-
-        .details nav p img {
-          display:none;
-        }
-
-        .content .details nav p span {
-          display:block;
-        }
-
-        .content section.details article {
-          width:100%;
-        }
-
-        .content ul.minimized {
-          margin-left:0;
-        }
-
-        .content {
-          width:90%;
-        }
-      }
-
+  color: #b20838;
+  text-align: center;
+  margin-bottom: 15px;
+}
+section, .details article .lead-image {
+  background: #b20838;
+}
+section img, .details article img {
+  max-width: 98%;
+  margin: 1%;
+  vertical-align: middle;
+}
+ul {
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+ul li, .details nav {
+  display: block;
+  float: left;
+  margin-top: 2%;
+  width: 15%;
+  margin-right: 2%;
+}
+/* every sixth has no right margin */
+ul li:nth-child(6n+6) {
+  margin-right: 0;
+}
+ul li a, .details nav p {
+  display: block;
+  background: #eae6df;
+  border: solid 5px #b20838;
+}
+ul li img {
+  max-width: 100%;
+}
+/* responsiveness */
+@media screen and (max-width: 1050px) {
+  
+}
+@media screen and (max-width: 980px) {
+  ul li, ul li:nth-child(6n+6), .details nav {
+    /* 4 columns */
+  
+    width: 23.5%;
+    margin-right: 2%;
+  }
+  /* every fourth has no right margin */
+  ul li:nth-child(4n+4) {
+    margin-right: 0;
+  }
+  .content section.details article {
+    width: 74.47916667%;
+  }
+  .content ul.minimized {
+    margin-left: 25.52083333%;
+  }
+}
+@media screen and (max-width: 800px) {
+  
+}
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
+  header {
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  header p.date {
+    font-size: 1.2857142857em;
+    margin-bottom: 5px;
+  }
+  header h1 {
+    font-size: 0.8571428571em;
+  }
+  ul li, ul li:nth-child(6n+6), ul li:nth-child(4n+4) {
+    /* 3 columns */
+  
+    width: 32%;
+    margin-right: 2%;
+  }
+  /* every third has no right margin */
+  ul li:nth-child(3n+3) {
+    margin-right: 0;
+  }
+  /* don't display the header title on mobile */
+  .content {
+    width: 90%;
+  }
+  .content section.details nav {
+    float: none;
+    width: 100%;
+  }
+  .content section.details nav p {
+    border: none;
+  }
+  .content section.details nav p img {
+    display: none;
+  }
+  .content section.details nav p span {
+    display: block;
+  }
+  .content section.details article {
+    width: 100%;
+  }
+  .content ul.minimized {
+    margin-left: 0;
+  }
+}
 /* content details */
-
 section.details {
-  background:none;
-  overflow:hidden;
+  background: none;
+  overflow: hidden;
 }
-
 section.details article {
-  float:left;
-  margin-top:20px;
-
-  width:82.98611111%;
-  margin-right:0;
+  float: left;
+  margin-top: 20px;
+  width: 82.98611111%;
+  margin-right: 0;
 }
-
 ul.minimized {
-  margin-left:17.01388889%;
+  margin-left: 17.01388889%;
 }
-
 .map {
-  max-width:100%;
+  max-width: 100%;
 }
-
 .map iframe {
-  width:98%;
-  height:18.75em; /* 300 px / 16 px */
-  margin:1%;
-}
+  width: 98%;
+  height: 18.75em;
+  /* 300 px / 16 px */
 
+  margin: 1%;
+}
 .details nav p span {
-  display:none;
-  font-size:1.5em; /* 24 px / 16 px */
-  font-family:Helvetica;
-}
+  display: none;
+  font-size: 1.5em;
+  /* 24 px / 16 px */
 
+  font-family: Helvetica;
+}
 .lead-image {
-  margin-bottom:1.5em;
+  margin-bottom: 1.5em;
 }
-
 article {
-  font-family:Helvetica;
+  font-family: Helvetica;
 }
-
 article h1 {
-  font-weight:bold;
-  font-size:1.5em; /* 24 px / 16 px */
-  margin-bottom:1em;
-}
+  font-weight: bold;
+  font-size: 1.5em;
+  /* 24 px / 16 px */
 
+  margin-bottom: 1em;
+}
 article h2 {
-  font-weight:bold;
-  font-size: 1.25em; /* 20 px / 16 px */
-  margin-bottom:1.2em;
-}
+  font-weight: bold;
+  font-size: 1.25em;
+  /* 20 px / 16 px */
 
+  margin-bottom: 1.2em;
+}
 article p {
-  line-height:1.5em;
-  margin-bottom:1.5em;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
 }
-
 article ul {
-  margin-bottom:1.5em;
+  margin-bottom: 1.5em;
 }
-
 article ul li {
-  float:none;
+  float: none;
   list-style-type: disc;
-  line-height:1.5em;
-  width:auto;
-  margin:auto;
+  line-height: 1.5em;
+  width: auto;
+  margin: auto;
 }
-
 article ul li:before {
   content: ">";
-  margin-right:0.5em;
+  margin-right: 0.5em;
 }

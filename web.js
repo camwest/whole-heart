@@ -10,6 +10,10 @@ app.get('/', function(req,res) {
   res.render('index.ejs');
 });
 
+app.get('/rsvp/new', function(req, res) {
+  res.render('rsvp/new.ejs');
+});
+
 var port = process.env.PORT || 3000;
 
 app.listen(port, function() {

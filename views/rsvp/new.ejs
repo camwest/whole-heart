@@ -1,0 +1,36 @@
+<div class="content">
+<%- partial('header') %>
+
+  <section class="details">
+    <nav>
+      <p><span>RSVP</span><img src="/images/tiles/location.gif" alt="RSVP"></p>
+    </nav>
+
+    <article>
+      <form action="/rsvp" method="POST">
+        <p>
+          <label for="name">Name: </label>
+          <input type="text" name="name" id="name">
+        </p>
+
+        <ul>
+          <li><input type="radio" name="attending" id="attendingYes"> <label for="attendingYes">Accepts</label></li>
+          <li><input type="radio" name="attending" id="attendingNo"> <label for="attendingNo">Regrets</label></li>
+        </ul>
+
+        <p>Describe how you know Cameron and/or Crystal:</p>
+
+        <textarea name="how_i_know_them" rows="3"></textarea>
+
+        <p>Profile Picture:
+          <select>
+            <option name="none">No picture</option>
+            <option name="twitter">Use Twitter profile</option>
+          </select>
+        </p>
+
+        <input type="submit" value="RSVP">
+      </form>
+    </article>
+  </section>
+</div>

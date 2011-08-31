@@ -1,5 +1,7 @@
 <%
-  if (this["class"]) class = ""
+  if (!locals.hasOwnProperty('class')) {
+    class = "";
+  }
 %>
 
 <ul class="<%= class %>">

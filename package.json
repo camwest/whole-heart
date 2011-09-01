@@ -5,6 +5,12 @@
     "express": "2.2.0",
     "ejs": "0.4.3",
     "less": "1.1.4",
-    "coffee-script": "1.1.2"
+    "coffee-script": "1.1.2",
+    "cradle": "0.5.5",
+    "express-messages": "0.0.2"
+  },
+
+  "devDependencies": {
+    "nodeunit": "0.5.4"
   }
 }

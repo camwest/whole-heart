@@ -7,12 +7,16 @@
     </nav>
 
     <article>
+
+      <%- messages() %>
+
       <form action="/rsvp" method="POST">
         <p>
           <label for="name">Name: </label>
           <input type="text" name="rsvp[name]" id="name">
         </p>
 
+        <p>Are you attending?</p>
         <ul>
           <li><input type="radio" name="rsvp[attending]" id="attendingYes"> <label for="attendingYes">Accepts</label></li>
           <li><input type="radio" name="rsvp[attending]" id="attendingNo"> <label for="attendingNo">Regrets</label></li>
@@ -21,15 +25,6 @@
         <p>Describe how you know Cameron and/or Crystal:</p>
 
         <textarea name="rsvp[how_i_know_them]" rows="3"></textarea>
-
-<!--
-        <p>Profile Picture:
-          <select>
-            <option name="none">No picture</option>
-            <option name="twitter">Use Twitter profile</option>
-          </select>
-        </p>
--->
 
         <input type="submit" value="RSVP">
       </form>

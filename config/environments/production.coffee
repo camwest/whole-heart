@@ -4,7 +4,7 @@ cradle = require('cradle')
 
 dbUrl      = process.env.CLOUDANT_URL
 dbAuth      = dbUrl.match(/https:\/\/(.*):(.*)@/)
-dbUserName  = dbAuth[1]
+dbUsername  = dbAuth[1]
 dbPassword  = dbAuth[2]
 dbHost      = "https://#{dbAuth[3]}"
 

@@ -1,3 +1,5 @@
+console.log "Configuring production environment..."
+
 cradle = require('cradle')
 
 cradle.setup 

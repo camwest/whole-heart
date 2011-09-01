@@ -8,10 +8,6 @@ dbUsername  = dbAuth[1]
 dbPassword  = dbAuth[2]
 dbHost      = "https://#{dbAuth[3]}"
 
-console.log dbUsername
-console.log dbPassword
-console.log dbHost
-
 cradle.setup 
   host: dbHost
   port: 443

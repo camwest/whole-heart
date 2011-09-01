@@ -1,0 +1,28 @@
+<style type="text/css">
+td {
+padding:5px;
+}
+
+</style>
+
+<table cellpadding=5 border=1>
+<thead>
+<tr>
+<th>Name</th>
+<th>Attending</th>
+<th>Submitted</th>
+<th>Details</th>
+</tr>
+</thead>
+
+<tbody>
+<% rsvps.forEach(function(rsvp) { %>
+<tr>
+<td><%= rsvp.name %></td>
+<td><%= rsvp.attending %></td>
+<td><%= rsvp.created_at %></td>
+<td><%= rsvp.how_i_know_them %></td>
+</tr>
+<% }) %>
+</tbody>
+</table>

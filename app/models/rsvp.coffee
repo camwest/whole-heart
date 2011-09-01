@@ -2,8 +2,6 @@ cradle = require('cradle')
 app = require( __dirname + '/../../config/application' )
 db = new(cradle.Connection)().database app.set 'couchdb'
 
-console.log app.set 'couchdb'
-
 class Rsvp
   # build an rsvp object based on the parameters
   constructor:(params = {}) ->

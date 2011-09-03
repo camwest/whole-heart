@@ -40,6 +40,7 @@ $(document).ready(function() {
 
   if($('#banner').length > 0) {
     $('header').hide();
+    $('#monogram').css('opacity', 0);
 
     var banner = $('#banner');
     var image = new Image();
@@ -50,11 +51,10 @@ $(document).ready(function() {
       $(this).attr('height', banner.height() );
 
       $('#banner').before(image);
-      $(image).hide();
+      $('header').delay(1500).slideDown(1000);
+      $('#monogram').delay(2500).animate({ opacity: 1 }, 2000);
 
-      $('header').delay(1000).slideDown(1000);
-
-      $(image).delay(1000).fadeIn(2000, function() {
+      $(image).hide().delay(1500).fadeIn(2000, function() {
         $(image).css('position', 'inherit');
         $(image).attr('width', '');
         $(image).attr('height', '');

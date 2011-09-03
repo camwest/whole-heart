@@ -45,11 +45,9 @@ app.get '/rsvp/new', (req, res) ->
 app.post '/rsvp', (req, res) ->
   rsvp = new Rsvp req.body.rsvp
 
-  console.log("HEREHERHE");
-
   rsvp.save (errors, persisted) ->
     if persisted
-      res.redirect '/rsvp/thank_you', layout: 'layouts/details', page: 'rsvp'
+      res.redirect '/rsvp/thank_you'
     else
       req.flash 'error', "Errors: #{errors.join(", ")}"
       res.render 'rsvp/new.ejs', layout: 'layouts/details', page: 'rsvp'

@@ -65,7 +65,7 @@ ul {
   overflow: hidden;
   margin-bottom: 50px;
 }
-ul li, .details nav {
+ul li {
   display: block;
   float: left;
   margin-top: 2%;
@@ -76,7 +76,7 @@ ul li, .details nav {
 ul li:nth-child(6n+6) {
   margin-right: 0;
 }
-ul li a, .details nav p {
+ul li a {
   display: block;
   background: #eae6df;
   /*border:solid 5px @themeColour;*/
@@ -90,11 +90,23 @@ section.details {
   background: none;
   overflow: hidden;
 }
-section.details article {
+section.details header {
+  margin-top: 0;
+  overflow: hidden;
+}
+section.details header .date {
+  text-align: left;
   float: left;
-  margin-top: 2%;
-  width: 82.98611111%;
-  margin-right: 0;
+  font-size: 1em;
+  line-height: 1em;
+  margin-right: 0.5em;
+}
+section.details header h1 {
+  font-weight: normal;
+  text-align: left;
+  float: left;
+  font-size: 1em;
+  line-height: 1em;
 }
 ul.minimized {
   margin-left: 17.01388889%;
@@ -109,14 +121,6 @@ ul.minimized {
 
   margin: 1%;
 }
-.details nav p span {
-  display: none;
-  font-size: 1.5em;
-  /* 24 px / 16 px */
-
-  font-family: 'BodoniBERegular', Georgia, serif;
-  color: #b20838;
-}
 .lead-image {
   margin-bottom: 1.5em;
 }
@@ -124,14 +128,14 @@ article {
   font-family: 'EngraversGothicBTRegular', Arial, 'sans-serif';
 }
 article h1 {
-  font-weight: bold;
   font-size: 1.5em;
   /* 24 px / 16 px */
 
   margin-bottom: 1em;
+  color: #b20838;
 }
 article h2 {
-  font-weight: bold;
+  color: #b20838;
   font-size: 1.25em;
   /* 20 px / 16 px */
 
@@ -160,7 +164,7 @@ article ul li:before {
   
 }
 @media screen and (max-width: 980px) {
-  ul li, ul li:nth-child(6n+6), .details nav {
+  ul li, ul li:nth-child(6n+6) {
     /* 4 columns */
   
     width: 23.5%;
@@ -169,12 +173,6 @@ article ul li:before {
   /* every fourth has no right margin */
   ul li:nth-child(4n+4) {
     margin-right: 0;
-  }
-  .content section.details article {
-    width: 74.47916667%;
-  }
-  .content ul.minimized {
-    margin-left: 25.52083333%;
   }
 }
 @media screen and (max-width: 800px) {
@@ -201,19 +199,6 @@ article ul li:before {
   /* don't display the header title on mobile */
   .content {
     width: 95%;
-  }
-  .content section.details nav {
-    float: none;
-    width: 100%;
-  }
-  .content section.details nav p {
-    border: none;
-  }
-  .content section.details nav p img {
-    display: none;
-  }
-  .content section.details nav p span {
-    display: block;
   }
   .content section.details article {
     width: 100%;
@@ -301,4 +286,11 @@ ul.error {
   background: #b20838;
   padding: 6px;
   color: #eae6df;
+}
+#monogram_small {
+  display: block;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 }

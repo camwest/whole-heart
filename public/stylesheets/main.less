@@ -102,7 +102,7 @@ ul {
   margin-bottom:50px;
 }
 
-ul li, .details nav {
+ul li {
   display:block;
   float:left;
   margin-top:@marginWidth;
@@ -115,7 +115,7 @@ ul li:nth-child(6n+6) {
   margin-right:0;
 }
 
-ul li a, .details nav p {
+ul li a {
   display:block;
   background:@backgroundColour;
   /*border:solid 5px @themeColour;*/
@@ -130,13 +130,28 @@ section.details {
   background:none;
   overflow:hidden;
 
-  article {
-    float:left;
-    margin-top:@marginWidth;
+  header {
+    margin-top:0;
+    overflow:hidden;
 
-    width:82.98611111%;
-    margin-right:0;
+    .date {
+      text-align:left;
+      float:left;
+      font-size:1em;
+      line-height:1em;
+      margin-right:0.5em;
+    }
+
+    h1 {
+      font-weight:normal;
+      text-align:left;
+      float:left;
+      font-size:1em;
+      line-height:1em;
+    }
   }
+
+
 
 }
 
@@ -155,13 +170,6 @@ ul.minimized {
   margin:1%;
 }
 
-.details nav p span {
-  display:none;
-  font-size:1.5em; /* 24 px / 16 px */
-  font-family: 'BodoniBERegular', Georgia, serif;
-  color:@themeColour;
-}
-
 .lead-image {
   margin-bottom:1.5em;
 }
@@ -170,13 +178,13 @@ article {
   font-family: 'EngraversGothicBTRegular', Arial, 'sans-serif';
 
   h1 {
-    font-weight:bold;
     font-size:1.5em; /* 24 px / 16 px */
     margin-bottom:1em;
+    color:@themeColour;
   }
 
   h2 {
-    font-weight:bold;
+    color:@themeColour;
     font-size: 1.25em; /* 20 px / 16 px */
     margin-bottom:1.2em;
   }
@@ -215,7 +223,7 @@ article {
 }
 
 @media screen and (max-width: 980px) {
-  ul li, ul li:nth-child(6n+6), .details nav {
+  ul li, ul li:nth-child(6n+6) {
     /* 4 columns */
     .columns(4);
   }
@@ -223,16 +231,6 @@ article {
   /* every fourth has no right margin */
   ul li:nth-child(4n+4) {
     margin-right:0;
-  }
-
-  .content {
-    section.details article {
-      width:74.47916667%;
-    }
-
-    ul.minimized {
-      margin-left:25.52083333%;
-    }
   }
 }
 
@@ -266,27 +264,9 @@ article {
     width:95%;
 
     section.details {
-      nav {
-        float:none;
-        width:100%;
-
-        p {
-          border:none;
-
-          img {
-            display:none;
-          }
-
-          span {
-            display:block;
-          }
-        }
-      }
-
       article {
         width:100%;
       }
-
     }
 
     ul.minimized {
@@ -392,4 +372,12 @@ ul.error {
   background:@themeColour;
   padding:6px;
   color:@backgroundColour;
+}
+
+#monogram_small {
+  display:block;
+  width:100px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:50px;
 }

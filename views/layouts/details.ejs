@@ -15,19 +15,18 @@
   <body>
     <div class="content">
 
-    <%- partial('header') %>
 
       <section class="details">
-        <nav>
-          <p><span>RSVP</span><img src="/images/tiles/<%= page %>.gif" alt="RSVP"></p>
-        </nav>
+        <%- partial('header') %>
 
         <article>
+
           <%- body %>
         </article>
       </section>
 
-      <%- partial('navigation', { class: "minimized" }) %>
+      <%- partial('navigation') %>
+
     </div>
 
     <script src="http://code.jquery.com/jquery-1.6.3.min.js"></script>

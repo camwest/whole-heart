@@ -37,6 +37,37 @@ $(document).ready(function() {
     return imageSrc.match( new RegExp("(.*)\/(.*)" + tail ));
   }
 
+
+  if($('#banner').length > 0) {
+    var banner = $('#banner');
+    var image = new Image();
+    $(image).load(function() {
+      $(this).css('position', 'absolute');
+      $(this).css('top','3px');
+      $(this).attr('width', banner.width() );
+      $(this).attr('height', banner.height() );
+
+      $('#banner').before(image);
+      $(image).hide();
+
+      setTimeout(function() {
+
+        $(image).fadeIn(function() {
+          $(image).css('position', 'inherit');
+          $(image).attr('width', '');
+          $(image).attr('height', '');
+          $(image).css('display','inline');
+          $(image).css('top','');
+          banner.remove();
+        });
+      }, 3000);
+
+    });
+
+    image.src = "/images/banner_b&w.jpg";
+  }
+
+  
 });
 
 

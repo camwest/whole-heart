@@ -3,6 +3,29 @@
 @backgroundColor: #eae6df;
 @themeColor: #b20838;
 
+@font-face {
+    font-family: 'BodoniBERegular';
+    src: url('/fonts/bodoni_be_regular_small_caps__oldstyle_figures-webfont.eot');
+    src: url('/fonts/bodoni_be_regular_small_caps__oldstyle_figures-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/bodoni_be_regular_small_caps__oldstyle_figures-webfont.woff') format('woff'),
+         url('/fonts/bodoni_be_regular_small_caps__oldstyle_figures-webfont.ttf') format('truetype'),
+         url('/fonts/bodoni_be_regular_small_caps__oldstyle_figures-webfont.svg#BodoniBERegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EngraversGothicBTRegular';
+    src: url('/fonts/engravers_gothic_bold-webfont.eot');
+    src: url('/fonts/engravers_gothic_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/engravers_gothic_bold-webfont.woff') format('woff'),
+         url('/fonts/engravers_gothic_bold-webfont.ttf') format('truetype'),
+         url('/fonts/engravers_gothic_bold-webfont.svg#EngraversGothicBTRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 .columns(@elements) {
   @margins: @elements - 1;
   @marginPercent: @marginWidth / @baseGrid;
@@ -37,17 +60,19 @@ header {
   margin-bottom:25px;
 
   h1 {
-    font-size: 1.25em; /* 20 px / 16 px */
+    font-size: 1.375em; /* 22 px / 16 px */
+    font-family: 'EngraversGothicBTRegular', Arial, 'sans-serif';
     text-transform:uppercase;
     text-align:center;
-    font-family:Helvetica;
   }
 
   p.date {
     font-size: 2.25em; /* 36 px / 16 px */
+    font-family: 'BodoniBERegular', Georgia, serif;
+
     color:@themeColor;
     text-align:center;
-    margin-bottom:15px;
+    margin-bottom:5px;
   }
 }
 
@@ -204,21 +229,12 @@ article {
 }
 
 @media screen and (max-width: 500px) {
-  body {
-    font-size:14px;
-  }
-
   header {
     margin-top:25px;
     margin-bottom:15px;
 
-    p.date {
-      font-size:1.2857142857em;
-      margin-bottom:5px;
-    }
-
     h1 {
-      font-size:0.8571428571em;
+      font-size: 1.25em;
     }
 
   }

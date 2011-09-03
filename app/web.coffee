@@ -25,7 +25,7 @@ app.configure ->
   app.configure env, ->
     require( app.set('envConfig') + '/' + env ).load(app);
 
-app.get 'details', (req, res) ->
+app.get '/details', (req, res) ->
   res.render 'details.ejs'
 
 app.get '/', (req, res) ->

@@ -55,10 +55,11 @@ ul li:nth-child(6n+6) {
 ul li a, .details nav p {
   display: block;
   background: #eae6df;
-  border: solid 5px #b20838;
+  /*border:solid 5px @themeColor;*/
+
 }
 ul li img {
-  max-width: 100%;
+  width: 100%;
 }
 /* content details */
 section.details {

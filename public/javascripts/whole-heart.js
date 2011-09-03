@@ -51,10 +51,10 @@ $(document).ready(function() {
       $(this).attr('height', banner.height() );
 
       $('#banner').before(image);
-      $('header').delay(1500).slideDown(1000);
+      $('header').delay(2000).slideDown(1000);
       $('#monogram').delay(2500).animate({ opacity: 0.75 }, 2000);
 
-      $(image).hide().delay(1500).fadeIn(2000, function() {
+      $(image).hide().delay(2000).fadeIn(2000, function() {
         $(image).css('position', 'inherit');
         $(image).attr('width', '');
         $(image).attr('height', '');

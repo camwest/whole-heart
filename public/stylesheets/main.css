@@ -46,6 +46,7 @@ header p.date {
 section, .details article .lead-image {
   background: #b20838;
   position: relative;
+  margin-top: 15px;
 }
 section img, .details article img {
   max-width: 98%;

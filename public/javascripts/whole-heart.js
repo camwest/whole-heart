@@ -39,6 +39,8 @@ $(document).ready(function() {
 
 
   if($('#banner').length > 0) {
+    $('header').hide();
+
     var banner = $('#banner');
     var image = new Image();
     $(image).load(function() {
@@ -50,18 +52,16 @@ $(document).ready(function() {
       $('#banner').before(image);
       $(image).hide();
 
-      setTimeout(function() {
+      $('header').delay(1000).slideDown(1000);
 
-        $(image).fadeIn(function() {
-          $(image).css('position', 'inherit');
-          $(image).attr('width', '');
-          $(image).attr('height', '');
-          $(image).css('display','inline');
-          $(image).css('top','');
-          banner.remove();
-        });
-      }, 3000);
-
+      $(image).delay(1000).fadeIn(2000, function() {
+        $(image).css('position', 'inherit');
+        $(image).attr('width', '');
+        $(image).attr('height', '');
+        $(image).css('display','inline');
+        $(image).css('top','');
+        banner.remove();
+      });
     });
 
     image.src = "/images/banner_b&w.jpg";

@@ -46,7 +46,7 @@ $(document).ready(function() {
     var image = new Image();
     $(image).load(function() {
       $(this).css('position', 'absolute');
-      $(this).css('top','3px');
+      $(this).css('top','1px');
       $(this).attr('width', banner.width() );
       $(this).attr('height', banner.height() );
 
@@ -64,7 +64,7 @@ $(document).ready(function() {
       });
     });
 
-    image.src = "/images/banner_b&w.jpg";
+    image.src = "/images/banner_second.jpg";
   }
 
   

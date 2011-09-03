@@ -37,17 +37,17 @@ app.get '/admin/rsvp', (req, res) ->
     res.render 'rsvp/index.ejs', rsvps: response
 
 app.get '/rsvp/thank_you', (req, res) ->
-  res.render 'rsvp/thank_you.ejs'
+  res.render 'rsvp/thank_you.ejs', layout: 'layouts/details', page: 'rsvp'
 
 app.get '/rsvp/new', (req, res) ->
-  res.render 'rsvp/new.ejs'
+  res.render 'rsvp/new.ejs', layout: 'layouts/details', page: 'rsvp'
 
-  app.post '/rsvp', (req, res) ->
-    rsvp = new Rsvp req.body.rsvp
+app.post '/rsvp', (req, res) ->
+  rsvp = new Rsvp req.body.rsvp
 
-    rsvp.save (errors, persisted) ->
-      if persisted
-        res.redirect '/rsvp/thank_you'
-      else
-        req.flash 'error', "Errors: #{errors.join(", ")}"
-        res.render 'rsvp/new.ejs'
+  rsvp.save (errors, persisted) ->
+    if persisted
+      res.redirect '/rsvp/thank_you', layout: 'layouts/details', page: 'rsvp'
+    else
+      req.flash 'error', "Errors: #{errors.join(", ")}"
+      res.render 'rsvp/new.ejs', layout: 'layouts/details', page: 'rsvp'

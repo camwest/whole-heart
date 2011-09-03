@@ -19,8 +19,8 @@ class Rsvp
   valid: ->
     errors = []
 
-    errors.push @check "name"
     errors.push @check "attending"
+    errors.push @check "name"
 
     @errors = @removeUndefined(errors)
 

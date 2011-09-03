@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title><%= page %> | My Whole Heart for My Whole Life</title>
+    <meta name="description" content="The wedding website of Crystal Rickard and Cameron Westland">
+    <meta name="author" content="Cameron Westland and Crystal Rickard">
+    <meta name="copyright" content="Cameron Westland and Crystal Rickard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+  </head>
+
+  <body>
+    <div class="content">
+
+    <%- partial('header') %>
+
+      <section class="details">
+        <nav>
+          <p><span>RSVP</span><img src="/images/tiles/<%= page %>.gif" alt="RSVP"></p>
+        </nav>
+
+        <article>
+          <%- body %>
+        </article>
+      </section>
+
+      <%- partial('navigation', { class: "minimized" }) %>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
+    <script src="/javascripts/whole-heart.js"></script>
+  </body>
+
+</html>
+
+

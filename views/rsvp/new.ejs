@@ -1,33 +1,19 @@
-<div class="content">
-<%- partial('header') %>
+<form action="/rsvp" method="POST">
+  <%- messages() %>
 
-  <section class="details">
-    <nav>
-      <p><span>RSVP</span><img src="/images/tiles/location.gif" alt="RSVP"></p>
-    </nav>
+  <ul>
+    <li><input type="radio" name="rsvp[attending]" value="accepts" id="attendingYes"> <label for="attendingYes">Attending</label></li>
+    <li><input type="radio" name="rsvp[attending]" value="regrets" id="attendingNo"> <label for="attendingNo">Not Attending</label></li>
+  </ul>
 
-    <article>
+  <p>
+    <input type="text" name="rsvp[name]" id="name" placeholder="Name:">
+  </p>
 
-      <%- messages() %>
+  <p>
+    <textarea name="rsvp[how_i_know_them]" rows="15" placeholder="Describe how you know Cameron and/or Crystal"></textarea>
+  </p>
 
-      <form action="/rsvp" method="POST">
-        <p>
-          <label for="name">Name: </label>
-          <input type="text" name="rsvp[name]" id="name">
-        </p>
+  <button type="submit">RSVP</button>
+</form>
 
-        <p>Are you attending?</p>
-        <ul>
-          <li><input type="radio" name="rsvp[attending]" value="accepts" id="attendingYes"> <label for="attendingYes">Accepts</label></li>
-          <li><input type="radio" name="rsvp[attending]" value="regrets" id="attendingNo"> <label for="attendingNo">Regrets</label></li>
-        </ul>
-
-        <p>Describe how you know Cameron and/or Crystal:</p>
-
-        <textarea name="rsvp[how_i_know_them]" rows="3"></textarea>
-
-        <input type="submit" value="RSVP">
-      </form>
-    </article>
-  </section>
-</div>

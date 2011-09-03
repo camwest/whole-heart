@@ -15,6 +15,7 @@
 body {
   font-size: 100%;
   background: #eae6df;
+  font-family: 'EngraversGothicBTRegular', Arial, 'sans-serif';
 }
 .content {
   width: 80%;
@@ -78,7 +79,7 @@ ul li:nth-child(6n+6) {
 ul li a, .details nav p {
   display: block;
   background: #eae6df;
-  /*border:solid 5px @themeColor;*/
+  /*border:solid 5px @themeColour;*/
 
 }
 ul li img {
@@ -113,13 +114,14 @@ ul.minimized {
   font-size: 1.5em;
   /* 24 px / 16 px */
 
-  font-family: Helvetica;
+  font-family: 'BodoniBERegular', Georgia, serif;
+  color: #b20838;
 }
 .lead-image {
   margin-bottom: 1.5em;
 }
 article {
-  font-family: Helvetica;
+  font-family: 'EngraversGothicBTRegular', Arial, 'sans-serif';
 }
 article h1 {
   font-weight: bold;
@@ -219,4 +221,84 @@ article ul li:before {
   .content ul.minimized {
     margin-left: 0;
   }
+}
+input[type="text"], input[type="password"], textarea {
+  color: #676667;
+  font-size: 14px;
+  height: 18px;
+  line-height: 14px;
+  outline: none;
+  padding: 6px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.05) 0 3px 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0 3px 3px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.05) 0 3px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 3px 3px inset;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #D9D9D9;
+  height: 34px;
+  width: 100%;
+}
+form {
+  margin-bottom: 20px;
+}
+form ul li {
+  list-style-type: none;
+  float: left;
+  margin-right: 1em;
+}
+form ul li:before {
+  content: "";
+  margin-right: 0;
+}
+textarea {
+  height: 135px;
+}
+button {
+  text-shadow: rgba(0, 0, 0, 0.24) 0 1px 1px;
+  border: 1px solid #597211;
+  color: white;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #90be0a), color-stop(100%, #7ba209));
+  background: -webkit-linear-gradient(#90be0a, #7ba209);
+  background: -moz-linear-gradient(#90be0a, #7ba209);
+  background: -o-linear-gradient(#90be0a, #7ba209);
+  background: linear-gradient(#90be0a, #7ba209);
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0 9px;
+  zoom: 1;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+button:hover {
+  opacity: 0.75;
+}
+button:active {
+  opacity: 1;
+}
+ul.error {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  background: #b20838;
+  padding: 6px;
+  color: #eae6df;
 }

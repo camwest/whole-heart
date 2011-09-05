@@ -219,7 +219,18 @@ article {
   p {
     line-height:1.5em;
     margin-bottom:1.5em;
+
+    a:link, a:visited {
+      color:#555555;
+      border-bottom:solid 1px #aaaaaa;
+      text-decoration:none;
+    }
+    a:hover {
+      color:black;
+      border-color:black;
+    }
   }
+
 
   ul {
     margin-bottom:1.5em;
@@ -229,6 +240,17 @@ article {
       line-height:1.5em;
       width:auto;
       margin:auto;
+
+      a:link, a:visited {
+        color:#555555;
+        border-bottom:solid 1px #aaaaaa;
+        text-decoration:none;
+      }
+      a:hover {
+        color:black;
+        border-color:black;
+      }
+
     }
 
   }
@@ -341,6 +363,10 @@ input[type="text"], input[type="password"], textarea {
 
 form {
   margin-bottom:20px;
+}
+
+form ul {
+  overflow:hidden;
 }
 
 form ul li {
@@ -472,3 +498,4 @@ dl {
     line-height:0;
   }
 }
+

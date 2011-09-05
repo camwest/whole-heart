@@ -171,6 +171,15 @@ article p {
   line-height: 1.5em;
   margin-bottom: 1.5em;
 }
+article p a:link, article p a:visited {
+  color: #555555;
+  border-bottom: solid 1px #aaaaaa;
+  text-decoration: none;
+}
+article p a:hover {
+  color: black;
+  border-color: black;
+}
 article ul {
   margin-bottom: 1.5em;
 }
@@ -179,6 +188,15 @@ article ul li {
   line-height: 1.5em;
   width: auto;
   margin: auto;
+}
+article ul li a:link, article ul li a:visited {
+  color: #555555;
+  border-bottom: solid 1px #aaaaaa;
+  text-decoration: none;
+}
+article ul li a:hover {
+  color: black;
+  border-color: black;
 }
 /* responsiveness */
 @media screen and (max-width: 1050px) {
@@ -267,6 +285,9 @@ input[type="text"], input[type="password"], textarea {
 }
 form {
   margin-bottom: 20px;
+}
+form ul {
+  overflow: hidden;
 }
 form ul li {
   list-style-type: none;

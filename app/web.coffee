@@ -2,6 +2,7 @@ express = require('express')
 Rsvp = require('./models/rsvp').Rsvp
 titleizer = require('./helpers/titleizer')
 cradle = require('cradle')
+sanitize = require('validator').sanitize
 
 app = express.createServer express.logger()
 
@@ -49,6 +50,15 @@ app.post '/rsvp', (req, res) ->
     else
       req.flash 'error', "Errors: #{errors.join(", ")}"
       res.render 'rsvp/new.ejs', layout: 'layouts/details', title: titleizer.title 'rsvp'
+
+app.get '/meet_our_guests', (req, res) ->
+  db = new(cradle.Connection)().database app.set 'couchdb'
+  db.view 'rsvp/accepts', (error, response) ->
+    res.render 'details/meet_our_guests.ejs', 
+      rsvps: response, 
+      layout: 'layouts/details', 
+      title: titleizer.title('meet_our_guests'),
+      sanitize: sanitize
 
 app.get '/:detail_page', (req, res) ->
   detail_page = req.params.detail_page

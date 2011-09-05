@@ -189,6 +189,8 @@ article {
   font-family: 'EngraversGothicBTRegular', Arial, 'sans-serif';
 
   h1 {
+    font-family: 'BodoniBERegular', Georgia, serif;
+
     font-size:1.5em; /* 24 px / 16 px */
     line-height:1.5em;
     margin-bottom:1em;
@@ -208,6 +210,7 @@ article {
 
 
   h2 {
+    font-family: 'BodoniBERegular', Georgia, serif;
     color:@themeColour;
     font-size: 1.25em; /* 20 px / 16 px */
     margin-bottom:1.2em;
@@ -415,11 +418,9 @@ ul.error {
 
 .tiles li img {
   display:block;
-  /*border:solid 5px @themeColour;*/
   margin-bottom:5px;
-
-margin-left:auto;
-margin-right:auto;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .tiles li span {
@@ -432,11 +433,6 @@ margin-right:auto;
   font-style:none;
   display:block;
   font-size:0.75em;
-}
-
-.tiles img {
-  /*max-width:100%;*/
-  /*width:auto;*/
 }
 
 .tiles li {
@@ -457,3 +453,22 @@ margin-right:auto;
   margin-right:0;
 }
 
+dl {
+  margin-bottom:1.5em;
+  max-width:500px;
+
+  dt {
+    font-family: 'BodoniBERegular', Georgia, serif;
+    font-size: 1.25em; /* 20 px / 16 px */
+    color:@themeColour;
+    margin-bottom:0.25em;
+  }
+
+  dd {
+    line-height:1.5em;
+  }
+
+  dd br {
+    line-height:0;
+  }
+}

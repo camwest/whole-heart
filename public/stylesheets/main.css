@@ -142,6 +142,7 @@ article {
   font-family: 'EngraversGothicBTRegular', Arial, 'sans-serif';
 }
 article h1 {
+  font-family: 'BodoniBERegular', Georgia, serif;
   font-size: 1.5em;
   /* 24 px / 16 px */
 
@@ -159,6 +160,7 @@ article h1 a:hover {
   border-color: #b20838;
 }
 article h2 {
+  font-family: 'BodoniBERegular', Georgia, serif;
   color: #b20838;
   font-size: 1.25em;
   /* 20 px / 16 px */
@@ -328,8 +330,6 @@ ul.error {
 }
 .tiles li img {
   display: block;
-  /*border:solid 5px @themeColour;*/
-
   margin-bottom: 5px;
   margin-left: auto;
   margin-right: auto;
@@ -343,12 +343,6 @@ ul.error {
   font-style: none;
   display: block;
   font-size: 0.75em;
-}
-.tiles img {
-  /*max-width:100%;*/
-
-  /*width:auto;*/
-
 }
 .tiles li {
   float: left;
@@ -365,4 +359,22 @@ ul.error {
 }
 .tiles.five li:nth-child(5n+5) {
   margin-right: 0;
+}
+dl {
+  margin-bottom: 1.5em;
+  max-width: 500px;
+}
+dl dt {
+  font-family: 'BodoniBERegular', Georgia, serif;
+  font-size: 1.25em;
+  /* 20 px / 16 px */
+
+  color: #b20838;
+  margin-bottom: 0.25em;
+}
+dl dd {
+  line-height: 1.5em;
+}
+dl dd br {
+  line-height: 0;
 }

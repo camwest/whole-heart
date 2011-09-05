@@ -7,7 +7,8 @@
     "less": "1.1.4",
     "coffee-script": "1.1.2",
     "cradle": "0.5.5",
-    "express-messages": "0.0.2"
+    "express-messages": "0.0.2",
+    "validator": "0.2.7"
   },
 
   "devDependencies": {

@@ -1,0 +1,14 @@
+<%
+  function nl2br(string) {
+    return string.replace(/\n/g, '<br />');
+  }
+%>
+
+<% rsvps.forEach(function(rsvp) { %>
+<dl>
+  <dt><%= rsvp.name %></dt>
+  <dd>
+    <%- (rsvp.how_i_know_them) ? nl2br( sanitize(rsvp.how_i_know_them).xss() ) : 'no entry' %>
+  </dd>
+</dl>
+<% }) %>

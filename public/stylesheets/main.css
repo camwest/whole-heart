@@ -19,6 +19,7 @@ body {
   letter-spacing: 0.0625em;
   /* 1 px / 16 px */
 
+  color: #555555;
 }
 .content {
   width: 80%;
@@ -40,6 +41,7 @@ header h1 {
   font-family: 'EngraversGothicBTRegular', Arial, 'sans-serif';
   text-transform: uppercase;
   text-align: center;
+  color: black;
 }
 header p.date {
   font-size: 2.25em;
@@ -121,6 +123,7 @@ section.details header h1 {
   float: left;
   font-size: 1em;
   line-height: 1em;
+  color: black;
 }
 .map {
   max-width: 100%;
@@ -327,10 +330,17 @@ ul.error {
   margin-left: auto;
   margin-right: auto;
   border: solid 5px #b20838;
+  margin-bottom: 5px;
 }
 .tiles li span {
   text-align: center;
   display: block;
+  line-height: 1em;
+}
+.tiles li span em {
+  font-style: none;
+  display: block;
+  font-size: 0.75em;
 }
 .tiles img {
   max-width: 100%;

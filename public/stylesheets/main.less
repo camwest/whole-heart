@@ -48,6 +48,7 @@ body {
   background:@backgroundColour;
   font-family: 'EngraversGothicBTRegular', Arial, 'sans-serif';
   letter-spacing: 0.0625em; /* 1 px / 16 px */
+  color:#555555;
 }
 
 .content {
@@ -67,6 +68,7 @@ header {
     font-family: 'EngraversGothicBTRegular', Arial, 'sans-serif';
     text-transform:uppercase;
     text-align:center;
+    color:black;
   }
 
   p.date {
@@ -160,6 +162,7 @@ section.details {
       float:left;
       font-size:1em;
       line-height:1em;
+      color:black;
     }
   }
 
@@ -413,12 +416,20 @@ ul.error {
   display:block;
   margin-left:auto;
   margin-right:auto;
-  border:solid 5px @themeColour
+  border:solid 5px @themeColour;
+  margin-bottom:5px;
 }
 
 .tiles li span {
   text-align:center;
   display:block;
+line-height:1em;
+}
+
+.tiles li span em {
+  font-style:none;
+  display:block;
+font-size:0.75em;
 }
 
 .tiles img {

@@ -145,6 +145,7 @@ article h1 {
   font-size: 1.5em;
   /* 24 px / 16 px */
 
+  line-height: 1.5em;
   margin-bottom: 1em;
   color: #b20838;
 }
@@ -327,10 +328,11 @@ ul.error {
 }
 .tiles li img {
   display: block;
+  /*border:solid 5px @themeColour;*/
+
+  margin-bottom: 5px;
   margin-left: auto;
   margin-right: auto;
-  border: solid 5px #b20838;
-  margin-bottom: 5px;
 }
 .tiles li span {
   text-align: center;
@@ -343,8 +345,10 @@ ul.error {
   font-size: 0.75em;
 }
 .tiles img {
-  max-width: 100%;
-  width: auto;
+  /*max-width:100%;*/
+
+  /*width:auto;*/
+
 }
 .tiles li {
   float: left;

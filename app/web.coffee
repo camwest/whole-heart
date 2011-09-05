@@ -1,5 +1,6 @@
 express = require('express')
 Rsvp = require('./models/rsvp').Rsvp
+titleizer = require('./helpers/titleizer')
 cradle = require('cradle')
 
 app = express.createServer express.logger()
@@ -25,9 +26,6 @@ app.configure ->
   app.configure env, ->
     require( app.set('envConfig') + '/' + env ).load(app);
 
-app.get '/details', (req, res) ->
-  res.render 'details.ejs'
-
 app.get '/', (req, res) ->
   res.render 'index.ejs'
 
@@ -37,10 +35,10 @@ app.get '/admin/rsvp', (req, res) ->
     res.render 'rsvp/index.ejs', rsvps: response
 
 app.get '/rsvp/thank_you', (req, res) ->
-  res.render 'rsvp/thank_you.ejs', layout: 'layouts/details', page: 'rsvp'
+  res.render 'rsvp/thank_you.ejs', layout: 'layouts/details', title: titleizer.title 'rsvp'
 
 app.get '/rsvp/new', (req, res) ->
-  res.render 'rsvp/new.ejs', layout: 'layouts/details', page: 'rsvp'
+  res.render 'rsvp/new.ejs', layout: 'layouts/details', title: titleizer.title 'rsvp'
 
 app.post '/rsvp', (req, res) ->
   rsvp = new Rsvp req.body.rsvp
@@ -50,4 +48,8 @@ app.post '/rsvp', (req, res) ->
       res.redirect '/rsvp/thank_you'
     else
       req.flash 'error', "Errors: #{errors.join(", ")}"
-      res.render 'rsvp/new.ejs', layout: 'layouts/details', page: 'rsvp'
+      res.render 'rsvp/new.ejs', layout: 'layouts/details', title: titleizer.title 'rsvp'
+
+app.get '/:detail_page', (req, res) ->
+  detail_page = req.params.detail_page
+  res.render "details/#{detail_page}.ejs", layout: 'layouts/details', title: titleizer.title detail_page

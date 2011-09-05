@@ -31,6 +31,9 @@ header h1 {
   font-size: 1.375em;
   /* 22 px / 16 px */
 
+  letter-spacing: 0.0625em;
+  /* 1 px / 16 px */
+
   font-family: 'EngraversGothicBTRegular', Arial, 'sans-serif';
   text-transform: uppercase;
   text-align: center;

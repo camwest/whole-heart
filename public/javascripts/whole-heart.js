@@ -52,7 +52,7 @@ $(document).ready(function() {
 
       $('#banner').before(image);
       $('header').delay(2000).slideDown(1000);
-      $('#monogram').delay(2500).animate({ opacity: 0.75 }, 2000);
+      $('#monogram').delay(2500).animate({ opacity: 1.0  }, 2000);
 
       $(image).hide().delay(2000).fadeIn(2000, function() {
         $(image).css('position', 'inherit');

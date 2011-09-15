@@ -16,6 +16,7 @@ body {
   font-size: 100%;
   background: #eae6df;
   font-family: 'EngraversGothicBTRegular', Arial, 'sans-serif';
+  text-transform: lowercase;
   letter-spacing: 0.0625em;
   /* 1 px / 16 px */
 
@@ -64,6 +65,8 @@ section, .details article .center {
 section img, .details article img {
   max-width: 98%;
   margin: 1%;
+  margin-top: 1.2%;
+  margin-bottom: 1.2%;
   vertical-align: middle;
 }
 section #monogram {
@@ -134,6 +137,8 @@ section.details header h1 {
   /* 300 px / 16 px */
 
   margin: 1%;
+  margin-top: 1.2%;
+  margin-bottom: 1.2%;
 }
 .lead-image {
   margin-bottom: 1.5em;

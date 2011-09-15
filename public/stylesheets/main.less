@@ -148,7 +148,7 @@ section.details {
     margin-top:0;
     overflow:hidden;
     border-bottom:solid 1px rgba(0,0,0, 0.1);
-    padding-bottom:1em;
+    padding-bottom:8px;
 
 
     .date {
@@ -197,14 +197,14 @@ article {
     font-family: 'BodoniBERegular', Georgia, serif;
 
     font-size:1.5em; /* 24 px / 16 px */
-    line-height:1.5em;
+    line-height:1.375em; /* 36 px / 24 px */
     margin-bottom:1em;
     color:@themeColour;
 
     a:link, a:visited {
-      color: fadeOut(@themeColour, 50%);
+      color: @themeColour;
       text-decoration: none;
-      border-bottom: solid 1px fadeOut(@themeColour, 90%);
+      border-bottom: solid 2px fadeOut(@themeColour, 90%);
     }
 
     a:hover {
@@ -218,7 +218,6 @@ article {
     font-family: 'BodoniBERegular', Georgia, serif;
     color:@themeColour;
     font-size: 1.25em; /* 20 px / 16 px */
-    margin-bottom:1.2em;
   }
 
   p {
